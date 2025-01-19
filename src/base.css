@@ -1,0 +1,39 @@
+@import url("https://db.onlinewebfonts.com/c/f036e81e6040acc6b43aabc036862d21?family=Averta");
+@import url("https://fonts.googleapis.com/css2?family=Tiny5&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Averta CY";
+}
+:root {
+  --background-color: #212121;
+  --text-color:#fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+b,
+a {
+  width: fit-content;
+  height: fit-content;
+  letter-spacing: -0.05em;
+  line-height: 100%;
+}
+p,
+b,
+a {
+  letter-spacing: 0em;
+}
