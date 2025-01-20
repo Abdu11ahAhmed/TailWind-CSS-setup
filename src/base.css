@@ -4,6 +4,11 @@
 @import url("https://db.onlinewebfonts.com/c/f550c57216d0004c8a8f0b55322fce73?family=Graphire");
 /* fonts  */
 
+@font-face {
+  font-family: tiny;
+  src: url("https://db.onlinewebfonts.com/c/f550c57216d0004c8a8f0b55322fce73?family=Graphire");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

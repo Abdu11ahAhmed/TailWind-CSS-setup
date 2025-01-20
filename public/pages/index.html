@@ -8,10 +8,32 @@
     <title>Document</title>
   </head>
   <body
-    class="bg-[var(--background-color)] text-[var(--text-color)] overflow-x-hidden"
+    class="bg-[var(--background-color)] text-[var(--text-color)] overflow-x-hidden font-tiny"
   >
     <!-- nav start -->
     <style>
+      body::before {
+        content: "nobleman";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 99.99vh;
+        width: 99.99vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--background-color);
+        animation: 1s performance forwards linear;
+        z-index: 1;
+        animation-delay: 2s;
+      }
+      @keyframes performance {
+        to {
+          background: #0000;
+          pointer-events: none;
+          opacity: 0;
+        }
+      }
       nav ul li {
         display: inline-block;
       }
@@ -24,7 +46,7 @@
       }
     </style>
     <nav
-      class="h-[7.5vh] flex items-center justify-between border border-white px-[20px] 2xl:px-[100px] relative"
+      class="h-[7.5vh] flex items-center justify-between px-[20px] 2xl:px-[100px] relative"
     >
       <a href="#" class="logo w-fit md:w-[135px] font-tiny text-base"
         >nobleman</a
@@ -59,8 +81,8 @@
         </li>
       </ul>
       <ul class="hidden md:flex">
-        <li><a href="#">Sign up</a></li>
-        <li><a href="#">Sign in</a></li>
+        <li><a class="md:text-sm 2xl:text-lg" href="#">Sign up</a></li>
+        <li><a class="md:text-sm 2xl:text-lg" href="#">Sign in</a></li>
       </ul>
       <div
         class="humberger cursor-pointer fixed right-[20px] before:h-0.5 before:w-full before:bg-white before:my-0.5 flex md:hidden h-[25px] w-[25px] items-center justify-center flex-col after:h-0.5 after:w-full after:bg-white after:my-0.5 select-none"
@@ -68,22 +90,33 @@
     </nav>
     <!-- nav end -->
     <div
-      class="container border border-red-800 min-h-[calc(100vh-7.5vh)] pt-10"
+      class="container min-h-[calc(100vh-7.5vh)] pt-10"
     >
-    <style>
-      @media screen and (max-width:768px) {
-        h1 br{
-          display: none;
+      <style>
+        @media screen and (max-width: 768px) {
+          h1 br {
+            display: none;
+          }
         }
-        h1{
-          line-height: 125%;
-        }
-      }
-    </style>
-      <h1 class="font-Graphire text-5xl tracking-normal text-center align-middle mx-[auto]">
-        Redefining luxury with timeless <br> design, exceptional performance, and <br>
-        bespoke elegance—where every drive <br> is a masterpiece of perfection
-      </h1>
+      </style>
+      <div class="">
+        <h1
+          class="font-AvertaCY text-[6vw] normal-case tracking-tighter pb-6 md:font-Graphire md:text-4xl md:tracking-normal md:text-center md:mx-[auto] md:pb-10 2xl:text-6xl"
+        >
+          Redefining luxury with timeless <br />
+          design, exceptional performance, and <br />
+          bespoke elegance—where every drive <br />
+          is a masterpiece of perfection
+        </h1>
+        <div class="image">
+          <img
+            src="../images/hero.avif"
+            height="50px"
+            width="100%"
+            alt="Hero Image"
+          />
+        </div>
+      </div>
     </div>
 
     <!-- scripts -->
