@@ -2,6 +2,12 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Tiny5&display=swap");
 
+@import url("https://db.onlinewebfonts.com/c/f550c57216d0004c8a8f0b55322fce73?family=Graphire");
+
+/* fonts  */
+
+/* fonts  */
+
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -110,9 +116,7 @@
   --tw-contain-style:  ;
 }
 
-/*
-! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com
-*/
+/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com  */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -600,8 +604,55 @@ video {
   position: fixed;
 }
 
+.absolute{
+  position: absolute;
+}
+
+.relative{
+  position: relative;
+}
+
+.left-\[100\%\]{
+  left: 100%;
+}
+
 .right-\[20px\]{
   right: 20px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.mx-\[auto\]{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mx-0{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.line-clamp-2{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-1{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.line-clamp-4{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 .flex{
@@ -612,32 +663,56 @@ video {
   display: none;
 }
 
+.h-\[25px\]{
+  height: 25px;
+}
+
 .h-\[7\.5vh\]{
   height: 7.5vh;
 }
 
-.h-\[25px\]{
-  height: 25px;
+.h-screen{
+  height: 100vh;
 }
 
 .min-h-\[calc\(100vh-7\.5vh\)\]{
   min-height: calc(100vh - 7.5vh);
 }
 
-.w-\[135px\]{
-  width: 135px;
-}
-
 .w-\[25px\]{
   width: 25px;
+}
+
+.w-fit{
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-screen{
+  width: 100vw;
 }
 
 .cursor-pointer{
   cursor: pointer;
 }
 
+.select-none{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.break-inside-avoid{
+  -moz-column-break-inside: avoid;
+       break-inside: avoid;
+}
+
 .flex-col{
   flex-direction: column;
+}
+
+.items-start{
+  align-items: flex-start;
 }
 
 .items-center{
@@ -650,6 +725,10 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 
 .border{
@@ -680,8 +759,45 @@ video {
   padding-right: 20px;
 }
 
+.pl-\[15\%\]{
+  padding-left: 15%;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.align-baseline{
+  vertical-align: baseline;
+}
+
+.align-middle{
+  vertical-align: middle;
+}
+
 .font-tiny{
   font-family: Tiny5, serif;
+}
+
+.font-Graphire{
+  font-family: Graphire;
+}
+
+.font-AvertaCY{
+  font-family: Averta;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-base{
@@ -689,9 +805,72 @@ video {
   line-height: 1.5rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-\[1\.6rem\]{
+  font-size: 1.6rem;
+}
+
+.text-\[1\.5rem\]{
+  font-size: 1.5rem;
+}
+
+.text-\[1\.48rem\]{
+  font-size: 1.48rem;
+}
+
+.text-\[1\.7rem\]{
+  font-size: 1.7rem;
+}
+
+.tracking-tighter{
+  letter-spacing: -0.05em;
+}
+
+.tracking-normal{
+  letter-spacing: 0em;
+}
+
 .text-\[var\(--text-color\)\]{
   color: var(--text-color);
 }
+
+.text-\[2xl\]{
+  color: 2xl;
+}
+
+.text-\[\]{
+  color: ;
+}
+
+.text-\[1\.6\]{
+  color: 1.6;
+}
+
+/* base */
 
 * {
   padding: 0;
@@ -705,7 +884,7 @@ video {
 
 :root {
   --background-color: #212121;
-  --text-color:#fff;
+  --text-color: #fff;
 }
 
 h1,
@@ -729,6 +908,38 @@ p,
 b,
 a {
   letter-spacing: 0em;
+}
+
+/* base */
+
+/* humberger */
+
+.humberger::before,
+.humberger::after {
+  transition: 0.5s rotate, 0.5s margin;
+}
+
+.humberger.active::before,
+.humberger.active::after {
+  rotate: 45deg;
+  margin: 0;
+  position: absolute;
+  transition: 0.5s rotate, 0.5s margin;
+}
+
+.humberger.active::after {
+  rotate: -45deg;
+}
+
+/* humberger */
+
+.links {
+  transition: 0.5s left;
+}
+
+.links.active {
+  left: 0;
+  transition: 0.5s left;
 }
 
 .before\:my-0\.5::before{
@@ -775,17 +986,24 @@ a {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-@media (min-width: 640px){
-  .sm\:flex{
-    display: flex;
-  }
-
-  .sm\:hidden{
-    display: none;
-  }
-}
-
 @media (min-width: 768px){
+  .md\:relative{
+    position: relative;
+  }
+
+  .md\:left-0{
+    left: 0px;
+  }
+
+  .md\:top-0{
+    top: 0px;
+  }
+
+  .md\:mx-\[auto\]{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -793,11 +1011,61 @@ a {
   .md\:hidden{
     display: none;
   }
+
+  .md\:h-0{
+    height: 0px;
+  }
+
+  .md\:w-0{
+    width: 0px;
+  }
+
+  .md\:w-\[135px\]{
+    width: 135px;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
+  }
+
+  .md\:items-center{
+    align-items: center;
+  }
+
+  .md\:pl-\[0\%\]{
+    padding-left: 0%;
+  }
+
+  .md\:text-center{
+    text-align: center;
+  }
+
+  .md\:align-middle{
+    vertical-align: middle;
+  }
+
+  .md\:font-Graphire{
+    font-family: Graphire;
+  }
+
+  .md\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .md\:tracking-normal{
+    letter-spacing: 0em;
+  }
 }
 
 @media (min-width: 1564px){
   .\32xl\:px-\[100px\]{
     padding-left: 100px;
     padding-right: 100px;
+  }
+
+  .\32xl\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 }

@@ -26,6 +26,7 @@ module.exports = {
       fontFamily: {
         tiny: ["Tiny5", "serif"],
         AvertaCY: ["Averta"],
+        Graphire: ["Graphire"],
       },
     },
   },

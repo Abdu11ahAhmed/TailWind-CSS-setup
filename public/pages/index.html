@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="../styles/style.css" />
     <title>Document</title>
   </head>
-  <body class="bg-[var(--background-color)] text-[var(--text-color)]">
+  <body
+    class="bg-[var(--background-color)] text-[var(--text-color)] overflow-x-hidden"
+  >
     <!-- nav start -->
     <style>
       nav ul li {
@@ -22,24 +24,38 @@
       }
     </style>
     <nav
-      class="h-[7.5vh] flex items-center justify-between border border-white px-[20px] 2xl:px-[100px]"
+      class="h-[7.5vh] flex items-center justify-between border border-white px-[20px] 2xl:px-[100px] relative"
     >
-      <a href="#" class="logo w-[135px] font-tiny text-base">nobleman</a>
-      <ul class="links hidden md:flex">
+      <a href="#" class="logo w-fit md:w-[135px] font-tiny text-base"
+        >nobleman</a
+      >
+      <ul
+        class="links absolute top-0 left-[100%] h-screen w-screen flex items-start pl-[15%] justify-center flex-col md:flex md:flex-row md:relative md:h-0 md:w-0 bg-[var(--background-color)] md:pl-[0%] md:left-0 md:top-0 md:items-center"
+      >
         <li class>
-          <a href="#">Home</a>
+          <a class="text-3xl md:text-sm line-clamp-2 tracking-tighter" href="#"
+            >Home</a
+          >
         </li>
         <li>
-          <a href="#">Models</a>
+          <a class="text-3xl md:text-sm line-clamp-2 tracking-tighter" href="#"
+            >Models</a
+          >
         </li>
         <li>
-          <a href="#">About</a>
+          <a class="text-3xl md:text-sm line-clamp-2 tracking-tighter" href="#"
+            >About</a
+          >
         </li>
         <li>
-          <a href="#">Services</a>
+          <a class="text-3xl md:text-sm line-clamp-2 tracking-tighter" href="#"
+            >Services</a
+          >
         </li>
         <li>
-          <a href="#">Contacts</a>
+          <a class="text-3xl md:text-sm line-clamp-2 tracking-tighter" href="#"
+            >Contacts</a
+          >
         </li>
       </ul>
       <ul class="hidden md:flex">
@@ -47,12 +63,31 @@
         <li><a href="#">Sign in</a></li>
       </ul>
       <div
-      class="humberger cursor-pointer fixed right-[20px] before:h-0.5 before:w-full before:bg-white before:my-0.5 flex md:hidden h-[25px] w-[25px] items-center justify-center flex-col border border-red-600 after:h-0.5 after:w-full after:bg-white after:my-0.5 md:hidden "
-    ></div>
+        class="humberger cursor-pointer fixed right-[20px] before:h-0.5 before:w-full before:bg-white before:my-0.5 flex md:hidden h-[25px] w-[25px] items-center justify-center flex-col after:h-0.5 after:w-full after:bg-white after:my-0.5 select-none"
+      ></div>
     </nav>
     <!-- nav end -->
-    <div class="container border border-red-800 min-h-[calc(100vh-7.5vh)]">
-      sdsd
+    <div
+      class="container border border-red-800 min-h-[calc(100vh-7.5vh)] pt-10"
+    >
+    <style>
+      @media screen and (max-width:768px) {
+        h1 br{
+          display: none;
+        }
+        h1{
+          line-height: 125%;
+        }
+      }
+    </style>
+      <h1 class="font-Graphire text-5xl tracking-normal text-center align-middle mx-[auto]">
+        Redefining luxury with timeless <br> design, exceptional performance, and <br>
+        bespoke elegance—where every drive <br> is a masterpiece of perfection
+      </h1>
     </div>
+
+    <!-- scripts -->
+    <script src="../javascript/main.js" defer></script>
+    <!-- scripts -->
   </body>
 </html>
