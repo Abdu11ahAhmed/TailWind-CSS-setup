@@ -89,17 +89,15 @@
       ></div>
     </nav>
     <!-- nav end -->
-    <div
-      class="container min-h-[calc(100vh-7.5vh)] pt-10"
-    >
+    <div class="container min-h-[calc(100vh-7.5vh)] pt-10">
       <style>
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 760px) {
           h1 br {
             display: none;
           }
         }
       </style>
-      <div class="">
+      <div class="section1">
         <h1
           class="font-AvertaCY text-[6vw] normal-case tracking-tighter pb-6 md:font-Graphire md:text-4xl md:tracking-normal md:text-center md:mx-[auto] md:pb-10 2xl:text-6xl"
         >
@@ -108,13 +106,31 @@
           bespoke elegance—where every drive <br />
           is a masterpiece of perfection
         </h1>
-        <div class="image">
-          <img
-            src="../images/hero.avif"
-            height="50px"
-            width="100%"
-            alt="Hero Image"
-          />
+        <div
+          class="-z-10 content relative flex overflow-hidden items-center md:w-[600px] md:mx-auto 2xl:w-[100%]"
+        >
+          <div
+            class="image -z-10 xl:h-[300px] xl:w-[100%] 2xl:h-[600px] 2xl:w-[100%]"
+          >
+            <img
+              src="../images/hero.avif"
+              height="50px"
+              width="100%"
+              class="-z-10 md:h-[100%] md:w-[80%] object-cover"
+              alt="Hero Image"
+            />
+          </div>
+          <div
+            class="text hidden absolute right-0 z-10 h-fit px-[40px] py-[45px] md:flex xl:px-[45px] xl:py-[40px] 2xl:px-[60px] 2xl:py-[55px] bg-[#2b2b2bad] backdrop-blur"
+          >
+            <h1
+              class="text-xl leading-none md:text-xl md:leading-[125%] xl:text-xl xl:leading-[125%] 2xl:text-[2.5rem] 2xl:leading-[120%]"
+            >
+              Luxury,<br />
+              Extravagance <br />
+              And Sexy . . .
+            </h1>
+          </div>
         </div>
       </div>
     </div>
