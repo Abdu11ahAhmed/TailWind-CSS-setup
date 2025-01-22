@@ -72,3 +72,41 @@ a {
   left: 0;
   transition: 0.5s left;
 }
+
+/* section3 */
+.section3 .content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.poster {
+  grid-column: span 2;
+}
+@media (max-width: 767px) {
+  .section3 .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .poster {
+    grid-column: 1 / -1;
+    order: -1;
+  }
+  .card:nth-child(1) {
+    order: 1;
+  }
+  .card:nth-child(2) {
+    order: 2;
+  }
+  .card:nth-child(3) {
+    order: 3;
+  }
+  .card:nth-child(4) {
+    order: 4;
+  }
+  .card:nth-child(5) {
+    order: 5;
+  }
+  .card:nth-child(6) {
+    order: 6;
+  }
+}
+/* section3 */
